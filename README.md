@@ -27,4 +27,8 @@ The script <strong>png_to_file.py</strong> aims to recover the file from the pre
 </p>
 </div>
 
-<h2>Examples</h2>
+<h2>Example</h2>
+<ul><li><code>python file_to_png.py Document.pdf Document</code>  This create a file Document.png from Document.pdf</li></ul>
+<ul><li><code>python png_to_file.py Document.png recovered_Document.pdf</code> This read the file Document.png and recreate the file recovered_Document.pdf</li></ul>
+
+The new recovered_Document.pdf is the same as recovered_Document.pdf, there may be a few extra bytes \x00 at the end of recovered_Document.pdf but this should not cause any problems.
